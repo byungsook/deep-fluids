@@ -14,14 +14,20 @@ Computer Graphics Forum (Proceedings of Eurographics 2019)
 
 This code is tested on Windows 10 and Ubuntu 16.04 with the following requirements:
 
-- [anaconda / python3.6](https://www.anaconda.com/download/)
+<!-- - [anaconda / python3.6](https://www.anaconda.com/download/) (run `conda install python=3.6` for the latest version.) -->
 - [TensorFlow 1.12](https://www.tensorflow.org/install/)
-- [tqdm](https://github.com/tqdm/tqdm)
-- [mantaflow](http://mantaflow.com/)
+- [mantaflow](http://mantaflow.com)
 
-After installing anaconda, run `pip install --ignore-installed --upgrade tensorflow-gpu tqdm`.
+Run the following line to install packages.
 
-To install `mantaflow`, please follow the instruction at [mantaflow website](http://mantaflow.com). Note that `numpy` cmake option should be set to enable support for numpy arrays.
+    $ pip install --upgrade tensorflow-gpu tqdm matplotlib Pillow imageio
+
+To install `mantaflow`, run:
+
+    $ git clone https://bitbucket.org/mantaflow/manta.git
+    $ git checkout 15eaf4
+    
+and follow the [instruction](http://mantaflow.com/install.html). Note that `numpy` cmake option should be set to enable support for numpy arrays. (i.e., `-DNUMPY='ON'`)
 
 ## Usage
 
