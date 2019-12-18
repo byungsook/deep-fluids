@@ -59,3 +59,7 @@ REM python main.py --is_train=False --load_path=AE_MODEL_DIR --code_path=NN_MODE
 REM ----- smoke3_mov, 3D
 REM ..\manta\build\Release\manta.exe .\scene\smoke3_mov.py --log_dir=data\smoke3_mov200_f400 --resolution_x=48 --resolution_y=72 --resolution_z=48
 REM python main.py --arch=ae --z_num=16 --max_epoch=10 --filter=64 --is_3d=True --lr_max=0.00005 --dataset=smoke3_mov200_f400 --res_x=48 --res_y=72 --res_z=48 --batch_size=4 --num_worker=1
+REM python main.py --is_train=False --load_path=AE_MODEL_DIR  --arch=ae --z_num=16 --max_epoch=20 --filter=64 --is_3d=True --dataset=smoke3_mov200_f400 --res_x=48 --res_y=72 --res_z=48 --test_batch_size=5
+REM python main.py --arch=nn --code_path=AE_MODEL_DIR --w_size=30 --z_num=16 --filters=512 --max_epoch=200 --batch_size=1024 --is_3d=True --dataset=smoke3_mov200_f400 --res_x=48 --res_y=72 --res_z=48
+REM python main.py --is_train=False --load_path=NN_MODEL_DIR --arch=nn --code_path=AE_MODEL_DIR --w_size=30 --z_num=16 --filters=512 --max_epoch=200 --batch_size=1024 --is_3d=True --dataset=smoke3_mov200_f400 --res_x=48 --res_y=72 --res_z=48
+REM python main.py --is_train=False --load_path=AE_MODEL_DIR --code_path=NN_MODEL_DIR --arch=ae --z_num=16 --max_epoch=20 --filter=64 --is_3d=True --dataset=smoke3_mov200_f400 --res_x=48 --res_y=72 --res_z=48 --test_batch_size=5
