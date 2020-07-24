@@ -1,3 +1,10 @@
+REM install virtualenv if needed
+REM pip3 install virtualenv
+REM virtualenv --system-site-packages ./venv
+REM call .\venv\Scripts\activate
+REM pip install --upgrade pip
+REM pip install --upgrade tensorflow==1.15 tqdm matplotlib Pillow imageio
+
 REM ----- smoke_pos_size, 2D
 REM 1. generate dataset
 REM ..\manta\build\Release\manta.exe .\scene\smoke_pos_size.py
@@ -17,7 +24,7 @@ REM python main.py --is_train=False --load_path=MODEL_DIR --test_batch_size=5 --
 
 REM ----- smoke3_obs_buo, 3D
 REM ..\manta\build\Release\manta.exe .\scene\smoke3_obs_buo.py
-REM python main.py --is_3d=True --dataset=smoke3_obs11_buo4_f150 --res_x=64 --res_y=96 --res_z=64 --batch_size=3 --num_worker=1
+REM python main.py --is_3d=True --dataset=smoke3_obs11_buo4_f150 --res_x=64 --res_y=96 --res_z=64 --batch_size=3 --num_worker=1 --log_step=100 --test_step=20
 
 
 REM ----- liquid_pos_size, 2D
@@ -27,7 +34,12 @@ REM python main.py --use_curl=False --is_3d=False --dataset=liquid_pos10_size4_f
 
 REM ----- liquid3_d_r, 3D
 REM ..\manta\build\Release\manta .\scene\liquid3_d_r.py
-REM python main.py --use_curl=False --is_3d=True --dataset=liquid3_d5_r10_f150 --res_x=96 --res_y=48 --res_z=96 --batch_size=3 --num_worker=1
+REM python main.py --use_curl=False --is_3d=True --dataset=liquid3_d5_r10_f150 --res_x=96 --res_y=48 --res_z=96 --batch_size=3 --num_worker=1 --log_step=100 --test_step=20
+
+
+REM ----- liquid3_vis, 3D
+REM ..\manta\build\Release\manta ./scene/liquid3_vis.py
+python main.py --use_curl=False --is_3d=True --dataset=liquid3_vis4_f150 --res_x=96 --res_y=72 --res_z=48 --batch_size=3 --num_worker=1 --log_step=100 --test_step=20
 
 
 REM ----- smoke3_rot, 2D

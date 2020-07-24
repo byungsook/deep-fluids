@@ -15,12 +15,12 @@ Computer Graphics Forum (Proceedings of Eurographics 2019)
 This code is tested on Windows 10 and Ubuntu 16.04 with the following requirements:
 
 <!-- - [anaconda / python3.6](https://www.anaconda.com/download/) (run `conda install python=3.6` for the latest version.) -->
-- [TensorFlow 1.12](https://www.tensorflow.org/install/)
+- [TensorFlow 1.15](https://www.tensorflow.org/install/)
 - [mantaflow](http://mantaflow.com)
 
 Run the following line to install packages.
 
-    $ pip install --upgrade tensorflow-gpu tqdm matplotlib Pillow imageio
+    $ pip install --upgrade tensorflow==1.15 tqdm matplotlib Pillow imageio
 
 To install `mantaflow`, run:
 

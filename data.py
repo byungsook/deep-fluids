@@ -434,13 +434,13 @@ if __name__ == "__main__":
 
     # ##############
     # # test: 3d
-    # setattr(config, 'is_3d', True)
-    # setattr(config, 'batch_size', 4)
+    # # setattr(config, 'is_3d', True)
+    # # setattr(config, 'batch_size', 4)
 
-    # setattr(config, 'dataset', 'smoke3_vel5_buo3_f250')
-    # setattr(config, 'res_x', 112)
-    # setattr(config, 'res_y', 64)
-    # setattr(config, 'res_z', 32)
+    # # setattr(config, 'dataset', 'smoke3_vel5_buo3_f250')
+    # # setattr(config, 'res_x', 112)
+    # # setattr(config, 'res_y', 64)
+    # # setattr(config, 'res_z', 32)
 
     # # setattr(config, 'dataset', 'smoke3_obs11_buo4_f150')
     # # setattr(config, 'res_x', 64)
@@ -451,6 +451,11 @@ if __name__ == "__main__":
     # # setattr(config, 'res_x', 96)
     # # setattr(config, 'res_y', 48)
     # # setattr(config, 'res_z', 96)
+
+    # # setattr(config, 'dataset', 'liquid3_vis4_f150')
+    # # setattr(config, 'res_x', 96)
+    # # setattr(config, 'res_y', 72)
+    # # setattr(config, 'res_z', 48)
 
     # # setattr(config, 'dataset', 'smoke3_rot_f500')
     # # setattr(config, 'res_x', 48)
